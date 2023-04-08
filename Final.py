@@ -260,7 +260,7 @@ st.plotly_chart(fig3, theme = 'streamlit')
 
 plt1 = px.box(new_df, x='tsunami', y='Moon.height', color='continent')
 
-plt.update_layout(
+plt1.update_layout(
     updatemenus=[
         dict(
             active=0,
