@@ -5,7 +5,7 @@
 
 
 #!pip install opendatasets
-!pip install matplotlib
+#!pip install matplotlib
 
 # In[2]:
 
