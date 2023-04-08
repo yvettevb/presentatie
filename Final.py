@@ -149,7 +149,7 @@ st.plotly_chart(fig2, theme = 'streamlit')
 tsunami_pie=df['tsunami'].value_counts().reset_index()
 tsunami_pie= tsunami_pie.rename(columns = {'index':'Tsunami', 'tsunami':'Counts'})
 fig7= px.pie(tsunami_pie, values='Counts', names='Tsunami')
-st.area_chart(fig7)
+st.plotly_chart(fig7, theme = 'streamlit)
 #Uit deze taartdiagram kan geconcludeerd worden dat circa 40 procent van alle geregistreede aardbevingen ook een tsunami teweeg brengen.
 
 
@@ -158,19 +158,19 @@ st.area_chart(fig7)
 
 df_grouped = df.groupby('continent')['tsunami'].value_counts().reset_index(name='counts')
 fig6 = px.pie(df_grouped, values = 'counts', names = 'continent', color = 'tsunami')
-fig6.show()
+st.plotly_chart(fig6, theme = 'streamlit')
 #DROPDOWN inzetten
 
 
 # In[14]:
 
 
-fig = px.bar(df, y="continent", x="gap", color="continent", orientation="h", hover_name="country",
+fig5 = px.bar(df, y="continent", x="gap", color="continent", orientation="h", hover_name="country",
              color_discrete_sequence=["red", "green", "blue", "goldenrod", "magenta"],
              title="Gaps per continent"
             )
 
-fig.show()
+st.plotly_chart(fig5, theme = 'streamlit')
 #in the continent Asia there is a lot of data about the gaps. Despite,in North America are the biggest gaps measured.
 #biggest gaps: Mexico 239 degrees
 #gap = the largest azimuthal gap between azimuthally adjacent station (in degrees)
