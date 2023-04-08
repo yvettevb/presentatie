@@ -182,9 +182,9 @@ st.plotly_chart(fig5, theme = 'streamlit')
 
 plt.figure(figsize=(15, 10))
 sns.heatmap(df[['magnitude','nst','estimated intensity','sig','depth']].corr(), annot=True,linecolor = 'black', cmap='Blues')
-st.plotly_chart(sns.heatmap)
+plt.show()
 #nst = the total number of seismic stations used to determine earthquake location
-
+#omzetten naar plotly 
 
 # In[ ]:
 
@@ -220,8 +220,8 @@ px.scatter(df, y='magnitude', x='depth')
 # In[17]:
 
 
-fig = px.scatter(df, x="year", y="magnitude", color="alert", color_discrete_sequence=["green", "yellow", "orange", "red"])
-fig.show()
+fig4 = px.scatter(df, x="year", y="magnitude", color="alert", color_discrete_sequence=["green", "yellow", "orange", "red"])
+st.plotly_chart(fig4, theme = 'streamlit')
 #hier zien we dat in 2010 een magnitude 'red' was afgegeven en in 2012 de hoogste magnitude 'yellow' was. 
 #zegt deze data wel iets gezien hoogste magnitude eigenlijk 9.1 is? 
 
@@ -249,8 +249,8 @@ new_df = pd.merge(solar, df,  how='inner', left_on=['earthquake.latitude','earth
 # In[20]:
 
 
-fig = px.box(df, x='continent', y='magnitude', title = 'Boxplot magnitude per continent with and without tsunami', color = 'tsunami')
-fig.show()
+fig3 = px.box(df, x='continent', y='magnitude', title = 'Boxplot magnitude per continent with and without tsunami', color = 'tsunami')
+st.plotly_chart(fig3, theme = 'streamlit')
 #we zien hier een uitschieter van mag 8.8 in South America bij geen tsunami
 #laagst gemeten mag is 6.5
 
@@ -258,7 +258,7 @@ fig.show()
 # In[21]:
 
 
-plt = px.box(new_df, x='tsunami', y='Moon.height', color='continent')
+plt1 = px.box(new_df, x='tsunami', y='Moon.height', color='continent')
 
 plt.update_layout(
     updatemenus=[
@@ -295,7 +295,7 @@ plt.update_layout(
 
 
 
-plt.show()
+st.plotly_chart(plt1, theme = 'streamlit')
 #in deze plot zien we of de hoogte van de maan samenhangt met het ontstaan van een tsunami per continent. 
 #bij de slider optie 'all continents' kunnen de continenten allemaal vergeleken worden.
 
