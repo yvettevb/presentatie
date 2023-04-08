@@ -149,7 +149,7 @@ st.plotly_chart(fig2, theme = 'streamlit')
 tsunami_pie=df['tsunami'].value_counts().reset_index()
 tsunami_pie= tsunami_pie.rename(columns = {'index':'Tsunami', 'tsunami':'Counts'})
 fig7= px.pie(tsunami_pie, values='Counts', names='Tsunami')
-st.plotly_chart(fig7, theme = 'streamlit)
+st.plotly_chart(fig7, theme = 'streamlit')
 #Uit deze taartdiagram kan geconcludeerd worden dat circa 40 procent van alle geregistreede aardbevingen ook een tsunami teweeg brengen.
 
 
