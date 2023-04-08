@@ -180,9 +180,9 @@ st.plotly_chart(fig5, theme = 'streamlit')
 # In[15]:
 
 
-plt.figure(figsize=(15, 10))
+fig = plt.figure(figsize=(15, 10))
 sns.heatmap(df[['magnitude','nst','estimated intensity','sig','depth']].corr(), annot=True,linecolor = 'black', cmap='Blues')
-st.altair_chart(chart, theme='streamlit')
+st.plotly_chart(fig, theme = 'streamlit')
 #nst = the total number of seismic stations used to determine earthquake location
 #omzetten naar plotly 
 
