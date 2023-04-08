@@ -13,7 +13,6 @@
 import numpy as np 
 import pandas as pd 
 import requests
-import opendatasets as od
 import datetime as dt
 from datetime import datetime 
 import matplotlib.pyplot as plt 
