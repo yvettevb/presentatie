@@ -139,9 +139,9 @@ df_mag=df_mag.rename(columns={"index": "Magnitude", "magnitude": "Count"})
 # In[11]:
 
 
-fig2 = px.bar(df_mag, x="Magnitude", y='Count')
-fig2.update_layout(xaxis = dict(dtick = 0.1))
-st.bar_chart(fig2)
+
+st.bar_chart(fig2 = px.bar(df_mag, x="Magnitude", y='Count')
+fig2.update_layout(xaxis = dict(dtick = 0.1)))
 
 
 # In[12]:
