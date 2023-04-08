@@ -25,7 +25,7 @@ from datetime import datetime as dt
 
 from datetime import date
 
-import plotly.express as px
+#import plotly.express as px
 
 import plotly.figure_factory as ff
 
