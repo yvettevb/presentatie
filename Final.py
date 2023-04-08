@@ -9,7 +9,7 @@ import requests
 
 import pandas as pd
 
-import folium
+#import folium
 
 import streamlit as st
 
