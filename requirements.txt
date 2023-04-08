@@ -2,4 +2,7 @@ pandas== 1.5.3
 streamlit == v1.17.0
 matplotlib == 3.7.0
 folium 
-plotly
+plotly.express
+matplotlib
+numpy
+
