@@ -9,11 +9,11 @@ import requests
 
 import pandas as pd
 
-#import folium
+import folium
 
 import streamlit as st
 
-#from streamlit_folium import st_folium
+from streamlit_folium import st_folium
 
 from PIL import Image
 
@@ -25,7 +25,7 @@ from datetime import datetime as dt
 
 from datetime import date
 
-#import plotly.express as px
+import plotly.express as px
 
 import plotly.figure_factory as ff
 
@@ -63,7 +63,7 @@ import plotly.express as px
 # In[ ]:
 
 
-
+st.write('TEST')
 
 
 # In[41]:
