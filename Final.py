@@ -65,6 +65,7 @@ import plotly.express as px
 
 # In[ ]:
 
+st.title('Earthquakes')
 
 
 
@@ -81,7 +82,8 @@ import plotly.express as px
 solar = pd.read_csv('SolarSystemAndEarthquakes.csv')
 df = pd.read_csv('earthquake_data.csv')
 
-
+st.dataframe(solar)
+st.dataframe(df)
 
 # In[4]:
 
