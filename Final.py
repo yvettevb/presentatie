@@ -129,7 +129,7 @@ df_mag=df_mag.rename(columns={"index": "Magnitude", "magnitude": "Count"})
 
 fig2 = px.bar(df_mag, x="Magnitude", y='Count')
 fig2.update_layout(xaxis = dict(dtick = 0.1))
-fig2.show()
+st.plotly_chart(fig2)
 
 
 # In[50]:
