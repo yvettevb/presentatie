@@ -149,7 +149,7 @@ st.bar_chart(fig2)
 tsunami_pie=df['tsunami'].value_counts().reset_index()
 tsunami_pie= tsunami_pie.rename(columns = {'index':'Tsunami', 'tsunami':'Counts'})
 fig7= px.pie(tsunami_pie, values='Counts', names='Tsunami')
-fig7.show()
+st.area_chart(fig7)
 #Uit deze taartdiagram kan geconcludeerd worden dat circa 40 procent van alle geregistreede aardbevingen ook een tsunami teweeg brengen.
 
 
