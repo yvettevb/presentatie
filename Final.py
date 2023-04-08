@@ -77,10 +77,8 @@ import plotly.express as px
 
 # In[3]:
 
-'SolarSystemAndEarthquakes.csv = st.file_uploader('Choose a file')
-if uploaded_file is not None:
+
 solar = pd.read_csv('SolarSystemAndEarthquakes.csv')
-st.write(dataframe)
 df = pd.read_csv('earthquake_data.csv')
 
 
