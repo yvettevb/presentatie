@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+get_ipython().system('pip3 install pipreqs')
+get_ipython().system('python3 -m  pipreqs.pipreqs')
+
+
 # In[11]:
 
 import requests
