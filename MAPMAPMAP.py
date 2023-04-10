@@ -83,8 +83,7 @@ def get_popup(row):
 # Add markers for each earthquake
 for index, row in df.iterrows():
     popup_str = get_popup(row)
- def get_color():
-    color = get_color(row['magnitude'])
+    #color = get_color(row['magnitude'])
     
     folium.Marker(location=[row['latitude'], row['longitude']],
                   popup=popup_str,
