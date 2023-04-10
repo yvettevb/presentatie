@@ -221,7 +221,9 @@ complete_map
 
 # In[ ]:
 
-
+st.folium(map4)
+st.folium(plate_map)
+st.folium(complete_map)
 
 
 
