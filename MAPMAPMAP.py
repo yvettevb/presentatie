@@ -14,7 +14,7 @@ import pandas as pd
 import plotly.express as px
 import folium 
 import streamlit as st
-from streamlit_folium import st_folium
+#from streamlit_folium import st_folium
 
 
 # In[50]:
