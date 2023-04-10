@@ -63,6 +63,8 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import numpy as np
 
 import urllib.request
+from streamlit import runtime
+runtime.exists()
 
 
 # In[50]:
