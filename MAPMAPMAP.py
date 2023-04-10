@@ -87,7 +87,7 @@ for index, row in df.iterrows():
     
     folium.Marker(location=[row['latitude'], row['longitude']],
                   popup=popup_str,
-                  icon=folium.Icon(color=color)).add_to(map4)
+                  icon=folium.Icon()).add_to(map4)
 
 # Add a layer control to the map
 folium.LayerControl(position='bottomleft', collapsed=False).add_to(map4)
