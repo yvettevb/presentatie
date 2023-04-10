@@ -7,6 +7,8 @@
 get_ipython().system('pip3 install pipreqs')
 get_ipython().system('python3 -m  pipreqs.pipreqs')
 
+python -m pip install -r requirements.txt
+
 #!pip install streamlit-folium
 #!pip install folium
 
