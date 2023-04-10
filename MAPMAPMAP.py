@@ -4,8 +4,8 @@
 # In[49]:
 
 
-get_ipython().system('pip3 install pipreqs')
-get_ipython().system('python3 -m  pipreqs.pipreqs')
+#get_ipython().system('pip3 install pipreqs')
+#get_ipython().system('python3 -m  pipreqs.pipreqs')
 
 #!pip install streamlit-folium
 
