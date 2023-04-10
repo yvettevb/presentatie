@@ -8,7 +8,7 @@
 #get_ipython().system('python3 -m  pipreqs.pipreqs')
 
 #!pip install streamlit-folium
-!pip install folium
+#!pip install folium
 
 import pandas as pd
 import plotly.express as px
